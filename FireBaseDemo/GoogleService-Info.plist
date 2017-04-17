@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>72633296362-nvo5dho78nfsff3dth1grqt2n1g01j6c.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.72633296362-nvo5dho78nfsff3dth1grqt2n1g01j6c</string>
+	<key>API_KEY</key>
+	<string>AIzaSyAkCi4QfGBqfteg8eTkxbfOt9c1SAZVnmE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>72633296362</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>org.chen.FireBaseDemo</string>
+	<key>PROJECT_ID</key>
+	<string>hellofire-d7c3b</string>
+	<key>STORAGE_BUCKET</key>
+	<string>hellofire-d7c3b.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:72633296362:ios:31b5c0365305af77</string>
+	<key>DATABASE_URL</key>
+	<string>https://hellofire-d7c3b.firebaseio.com/</string>
+</dict>
+</plist>

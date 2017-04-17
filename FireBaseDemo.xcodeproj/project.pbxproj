@@ -7,25 +7,80 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C52735121EA3EA7D00AD05DA /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C52735111EA3EA7D00AD05DA /* ProfileViewController.m */; };
+		C56980781EA3CCF40088F922 /* Facebook Button.png in Resources */ = {isa = PBXBuildFile; fileRef = C56980771EA3CCF40088F922 /* Facebook Button.png */; };
+		C56B52891EA078B900FD1516 /* BG Image.png in Resources */ = {isa = PBXBuildFile; fileRef = C56B52881EA078B900FD1516 /* BG Image.png */; };
+		C56B528B1EA0793500FD1516 /* UI8_Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C56B528A1EA0793500FD1516 /* UI8_Logo.png */; };
+		C56B528E1EA0798400FD1516 /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = C56B528D1EA0798400FD1516 /* login.png */; };
+		C56B52901EA079A700FD1516 /* ButtonEmpty.png in Resources */ = {isa = PBXBuildFile; fileRef = C56B528F1EA079A700FD1516 /* ButtonEmpty.png */; };
+		C56B52921EA08F0600FD1516 /* signUp.png in Resources */ = {isa = PBXBuildFile; fileRef = C56B52911EA08F0600FD1516 /* signUp.png */; };
 		C58D55691E9FCA80006C799D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C58D55681E9FCA80006C799D /* main.m */; };
 		C58D556C1E9FCA80006C799D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C58D556B1E9FCA80006C799D /* AppDelegate.m */; };
 		C58D556F1E9FCA80006C799D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C58D556E1E9FCA80006C799D /* ViewController.m */; };
 		C58D55721E9FCA80006C799D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C58D55701E9FCA80006C799D /* Main.storyboard */; };
 		C58D55741E9FCA81006C799D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C58D55731E9FCA81006C799D /* Assets.xcassets */; };
 		C58D55771E9FCA81006C799D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C58D55751E9FCA81006C799D /* LaunchScreen.storyboard */; };
+		C58D557F1E9FCA9C006C799D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C58D557E1E9FCA9C006C799D /* GoogleService-Info.plist */; };
+		C5A1AAEC1EA2A69B0027AF7B /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = C5A1AAEB1EA2A69B0027AF7B /* back.png */; };
+		C5A1AAEE1EA2A6A80027AF7B /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = C5A1AAED1EA2A6A80027AF7B /* close.png */; };
+		C5A1AAF01EA2CF030027AF7B /* input line.png in Resources */ = {isa = PBXBuildFile; fileRef = C5A1AAEF1EA2CF030027AF7B /* input line.png */; };
+		C5A1AAF31EA2F63C0027AF7B /* UIView+firstResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A1AAF21EA2F63C0027AF7B /* UIView+firstResponder.m */; };
+		C5A1AAF61EA30F790027AF7B /* FireBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A1AAF51EA30F790027AF7B /* FireBaseManager.m */; };
+		C5C3C4791EA11E3000D75F06 /* UIView+Animate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C3C4781EA11E3000D75F06 /* UIView+Animate.m */; };
+		C5C3C47C1EA1297C00D75F06 /* FormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C3C47B1EA1297C00D75F06 /* FormViewController.m */; };
+		C5C3C47F1EA12D3F00D75F06 /* CustomNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C3C47E1EA12D3F00D75F06 /* CustomNavController.m */; };
+		C5D5E1061EA3FED6005A3111 /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = C5D5E1051EA3FED6005A3111 /* settings.png */; };
+		C5D5E1081EA419A8005A3111 /* facebook-app-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C5D5E1071EA419A8005A3111 /* facebook-app-logo.png */; };
+		C5D5E10B1EA46561005A3111 /* UIViewController+simpleAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D5E10A1EA46561005A3111 /* UIViewController+simpleAlert.m */; };
+		C5D5E10E1EA46B73005A3111 /* YCKbViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D5E10D1EA46B73005A3111 /* YCKbViewController.m */; };
+		C5D5E1111EA48C53005A3111 /* FriendsTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D5E1101EA48C53005A3111 /* FriendsTableView.m */; };
+		C93222F731D5FE2395C2ABA7 /* libPods-FireBaseDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0780739E30F52D9C3C2C2A31 /* libPods-FireBaseDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0780739E30F52D9C3C2C2A31 /* libPods-FireBaseDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FireBaseDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C52735101EA3EA7D00AD05DA /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfileViewController.h; path = FireBaseDemo/ProfileViewController.h; sourceTree = "<group>"; };
+		C52735111EA3EA7D00AD05DA /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileViewController.m; path = FireBaseDemo/ProfileViewController.m; sourceTree = "<group>"; };
+		C56980771EA3CCF40088F922 /* Facebook Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Facebook Button.png"; sourceTree = "<group>"; };
+		C56B52881EA078B900FD1516 /* BG Image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BG Image.png"; sourceTree = "<group>"; };
+		C56B528A1EA0793500FD1516 /* UI8_Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UI8_Logo.png; sourceTree = "<group>"; };
+		C56B528D1EA0798400FD1516 /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
+		C56B528F1EA079A700FD1516 /* ButtonEmpty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonEmpty.png; sourceTree = "<group>"; };
+		C56B52911EA08F0600FD1516 /* signUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signUp.png; sourceTree = "<group>"; };
 		C58D55641E9FCA80006C799D /* FireBaseDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireBaseDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C58D55681E9FCA80006C799D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C58D556A1E9FCA80006C799D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C58D556B1E9FCA80006C799D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C58D556D1E9FCA80006C799D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C58D556E1E9FCA80006C799D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C58D556D1E9FCA80006C799D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = FireBaseDemo/ViewController.h; sourceTree = "<group>"; };
+		C58D556E1E9FCA80006C799D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = FireBaseDemo/ViewController.m; sourceTree = "<group>"; };
 		C58D55711E9FCA80006C799D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C58D55731E9FCA81006C799D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C58D55761E9FCA81006C799D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C58D55781E9FCA81006C799D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C58D557E1E9FCA9C006C799D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C5A1AAEB1EA2A69B0027AF7B /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		C5A1AAED1EA2A6A80027AF7B /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
+		C5A1AAEF1EA2CF030027AF7B /* input line.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "input line.png"; sourceTree = "<group>"; };
+		C5A1AAF11EA2F63C0027AF7B /* UIView+firstResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+firstResponder.h"; sourceTree = "<group>"; };
+		C5A1AAF21EA2F63C0027AF7B /* UIView+firstResponder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+firstResponder.m"; sourceTree = "<group>"; };
+		C5A1AAF41EA30F790027AF7B /* FireBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FireBaseManager.h; sourceTree = "<group>"; };
+		C5A1AAF51EA30F790027AF7B /* FireBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FireBaseManager.m; sourceTree = "<group>"; };
+		C5C3C4771EA11E3000D75F06 /* UIView+Animate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Animate.h"; sourceTree = "<group>"; };
+		C5C3C4781EA11E3000D75F06 /* UIView+Animate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animate.m"; sourceTree = "<group>"; };
+		C5C3C47A1EA1297C00D75F06 /* FormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FormViewController.h; path = FireBaseDemo/FormViewController.h; sourceTree = "<group>"; };
+		C5C3C47B1EA1297C00D75F06 /* FormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FormViewController.m; path = FireBaseDemo/FormViewController.m; sourceTree = "<group>"; };
+		C5C3C47D1EA12D3F00D75F06 /* CustomNavController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavController.h; sourceTree = "<group>"; };
+		C5C3C47E1EA12D3F00D75F06 /* CustomNavController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavController.m; sourceTree = "<group>"; };
+		C5D5E1051EA3FED6005A3111 /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		C5D5E1071EA419A8005A3111 /* facebook-app-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "facebook-app-logo.png"; sourceTree = "<group>"; };
+		C5D5E1091EA46561005A3111 /* UIViewController+simpleAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+simpleAlert.h"; path = "../UIViewController+simpleAlert.h"; sourceTree = "<group>"; };
+		C5D5E10A1EA46561005A3111 /* UIViewController+simpleAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+simpleAlert.m"; path = "../UIViewController+simpleAlert.m"; sourceTree = "<group>"; };
+		C5D5E10C1EA46B73005A3111 /* YCKbViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YCKbViewController.h; path = ../YCKbViewController.h; sourceTree = "<group>"; };
+		C5D5E10D1EA46B73005A3111 /* YCKbViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YCKbViewController.m; path = ../YCKbViewController.m; sourceTree = "<group>"; };
+		C5D5E10F1EA48C53005A3111 /* FriendsTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FriendsTableView.h; path = FireBaseDemo/FriendsTableView.h; sourceTree = "<group>"; };
+		C5D5E1101EA48C53005A3111 /* FriendsTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FriendsTableView.m; path = FireBaseDemo/FriendsTableView.m; sourceTree = "<group>"; };
+		F322859219DBBF37A2B31DC9 /* Pods-FireBaseDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireBaseDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireBaseDemo/Pods-FireBaseDemo.release.xcconfig"; sourceTree = "<group>"; };
+		FA24A3B743F89548CD1DDFF6 /* Pods-FireBaseDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireBaseDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FireBaseDemo/Pods-FireBaseDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +88,54 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C93222F731D5FE2395C2ABA7 /* libPods-FireBaseDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1AD027F63A62C15BC93989EB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0780739E30F52D9C3C2C2A31 /* libPods-FireBaseDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5817E989170B77D0E853157 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FA24A3B743F89548CD1DDFF6 /* Pods-FireBaseDemo.debug.xcconfig */,
+				F322859219DBBF37A2B31DC9 /* Pods-FireBaseDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C56B528C1EA0793A00FD1516 /* UIImages */ = {
+			isa = PBXGroup;
+			children = (
+				C5A1AAEA1EA2A6850027AF7B /* NavBar */,
+				C56B528A1EA0793500FD1516 /* UI8_Logo.png */,
+				C5D5E1071EA419A8005A3111 /* facebook-app-logo.png */,
+				C56B52881EA078B900FD1516 /* BG Image.png */,
+				C56980771EA3CCF40088F922 /* Facebook Button.png */,
+				C5D5E1051EA3FED6005A3111 /* settings.png */,
+				C56B528D1EA0798400FD1516 /* login.png */,
+				C5A1AAEF1EA2CF030027AF7B /* input line.png */,
+				C56B52911EA08F0600FD1516 /* signUp.png */,
+				C56B528F1EA079A700FD1516 /* ButtonEmpty.png */,
+			);
+			name = UIImages;
+			sourceTree = "<group>";
+		};
 		C58D555B1E9FCA80006C799D = {
 			isa = PBXGroup;
 			children = (
 				C58D55661E9FCA80006C799D /* FireBaseDemo */,
 				C58D55651E9FCA80006C799D /* Products */,
+				A5817E989170B77D0E853157 /* Pods */,
+				1AD027F63A62C15BC93989EB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +150,15 @@
 		C58D55661E9FCA80006C799D /* FireBaseDemo */ = {
 			isa = PBXGroup;
 			children = (
+				C5A1AAF81EA31E2F0027AF7B /* Helpers */,
+				C5A1AAF71EA31DF50027AF7B /* UIControllers */,
+				C56B528C1EA0793A00FD1516 /* UIImages */,
 				C58D556A1E9FCA80006C799D /* AppDelegate.h */,
 				C58D556B1E9FCA80006C799D /* AppDelegate.m */,
-				C58D556D1E9FCA80006C799D /* ViewController.h */,
-				C58D556E1E9FCA80006C799D /* ViewController.m */,
 				C58D55701E9FCA80006C799D /* Main.storyboard */,
 				C58D55731E9FCA81006C799D /* Assets.xcassets */,
 				C58D55751E9FCA81006C799D /* LaunchScreen.storyboard */,
+				C58D557E1E9FCA9C006C799D /* GoogleService-Info.plist */,
 				C58D55781E9FCA81006C799D /* Info.plist */,
 				C58D55671E9FCA80006C799D /* Supporting Files */,
 			);
@@ -79,6 +173,50 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C5A1AAEA1EA2A6850027AF7B /* NavBar */ = {
+			isa = PBXGroup;
+			children = (
+				C5A1AAED1EA2A6A80027AF7B /* close.png */,
+				C5A1AAEB1EA2A69B0027AF7B /* back.png */,
+			);
+			name = NavBar;
+			sourceTree = "<group>";
+		};
+		C5A1AAF71EA31DF50027AF7B /* UIControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C52735101EA3EA7D00AD05DA /* ProfileViewController.h */,
+				C52735111EA3EA7D00AD05DA /* ProfileViewController.m */,
+				C5C3C47D1EA12D3F00D75F06 /* CustomNavController.h */,
+				C5C3C47E1EA12D3F00D75F06 /* CustomNavController.m */,
+				C58D556D1E9FCA80006C799D /* ViewController.h */,
+				C58D556E1E9FCA80006C799D /* ViewController.m */,
+				C5C3C47A1EA1297C00D75F06 /* FormViewController.h */,
+				C5C3C47B1EA1297C00D75F06 /* FormViewController.m */,
+				C5D5E10F1EA48C53005A3111 /* FriendsTableView.h */,
+				C5D5E1101EA48C53005A3111 /* FriendsTableView.m */,
+			);
+			name = UIControllers;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		C5A1AAF81EA31E2F0027AF7B /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C5A1AAF41EA30F790027AF7B /* FireBaseManager.h */,
+				C5A1AAF51EA30F790027AF7B /* FireBaseManager.m */,
+				C5C3C4771EA11E3000D75F06 /* UIView+Animate.h */,
+				C5C3C4781EA11E3000D75F06 /* UIView+Animate.m */,
+				C5A1AAF11EA2F63C0027AF7B /* UIView+firstResponder.h */,
+				C5A1AAF21EA2F63C0027AF7B /* UIView+firstResponder.m */,
+				C5D5E1091EA46561005A3111 /* UIViewController+simpleAlert.h */,
+				C5D5E10A1EA46561005A3111 /* UIViewController+simpleAlert.m */,
+				C5D5E10C1EA46B73005A3111 /* YCKbViewController.h */,
+				C5D5E10D1EA46B73005A3111 /* YCKbViewController.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +224,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C58D557B1E9FCA81006C799D /* Build configuration list for PBXNativeTarget "FireBaseDemo" */;
 			buildPhases = (
+				D59653B45C638FF2225E53C4 /* [CP] Check Pods Manifest.lock */,
 				C58D55601E9FCA80006C799D /* Sources */,
 				C58D55611E9FCA80006C799D /* Frameworks */,
 				C58D55621E9FCA80006C799D /* Resources */,
+				F149EEE2F7437E5EC8C04290 /* [CP] Embed Pods Frameworks */,
+				F46482BD5B5C99D1716B71B4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -110,6 +251,7 @@
 				TargetAttributes = {
 					C58D55631E9FCA80006C799D = {
 						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = 6VLKCHZN66;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -138,20 +280,89 @@
 			buildActionMask = 2147483647;
 			files = (
 				C58D55771E9FCA81006C799D /* LaunchScreen.storyboard in Resources */,
+				C56B528E1EA0798400FD1516 /* login.png in Resources */,
+				C58D557F1E9FCA9C006C799D /* GoogleService-Info.plist in Resources */,
+				C56B52921EA08F0600FD1516 /* signUp.png in Resources */,
 				C58D55741E9FCA81006C799D /* Assets.xcassets in Resources */,
+				C5A1AAEE1EA2A6A80027AF7B /* close.png in Resources */,
+				C5D5E1081EA419A8005A3111 /* facebook-app-logo.png in Resources */,
+				C56B52901EA079A700FD1516 /* ButtonEmpty.png in Resources */,
+				C5A1AAEC1EA2A69B0027AF7B /* back.png in Resources */,
+				C5D5E1061EA3FED6005A3111 /* settings.png in Resources */,
+				C56B528B1EA0793500FD1516 /* UI8_Logo.png in Resources */,
+				C5A1AAF01EA2CF030027AF7B /* input line.png in Resources */,
 				C58D55721E9FCA80006C799D /* Main.storyboard in Resources */,
+				C56B52891EA078B900FD1516 /* BG Image.png in Resources */,
+				C56980781EA3CCF40088F922 /* Facebook Button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D59653B45C638FF2225E53C4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F149EEE2F7437E5EC8C04290 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FireBaseDemo/Pods-FireBaseDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F46482BD5B5C99D1716B71B4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FireBaseDemo/Pods-FireBaseDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C58D55601E9FCA80006C799D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5A1AAF61EA30F790027AF7B /* FireBaseManager.m in Sources */,
+				C5D5E10E1EA46B73005A3111 /* YCKbViewController.m in Sources */,
+				C5D5E10B1EA46561005A3111 /* UIViewController+simpleAlert.m in Sources */,
+				C5D5E1111EA48C53005A3111 /* FriendsTableView.m in Sources */,
+				C52735121EA3EA7D00AD05DA /* ProfileViewController.m in Sources */,
 				C58D556F1E9FCA80006C799D /* ViewController.m in Sources */,
 				C58D556C1E9FCA80006C799D /* AppDelegate.m in Sources */,
+				C5C3C4791EA11E3000D75F06 /* UIView+Animate.m in Sources */,
+				C5C3C47C1EA1297C00D75F06 /* FormViewController.m in Sources */,
+				C5A1AAF31EA2F63C0027AF7B /* UIView+firstResponder.m in Sources */,
+				C5C3C47F1EA12D3F00D75F06 /* CustomNavController.m in Sources */,
 				C58D55691E9FCA80006C799D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,8 +483,10 @@
 		};
 		C58D557C1E9FCA81006C799D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FA24A3B743F89548CD1DDFF6 /* Pods-FireBaseDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6VLKCHZN66;
 				INFOPLIST_FILE = FireBaseDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.chen.FireBaseDemo;
@@ -283,8 +496,10 @@
 		};
 		C58D557D1E9FCA81006C799D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F322859219DBBF37A2B31DC9 /* Pods-FireBaseDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 6VLKCHZN66;
 				INFOPLIST_FILE = FireBaseDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.chen.FireBaseDemo;
@@ -311,6 +526,7 @@
 				C58D557D1E9FCA81006C799D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

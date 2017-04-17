@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "YCKbViewController.h"
+@interface ViewController : YCKbViewController
+@property (weak, nonatomic) IBOutlet UIImageView *topLogo;
+@property (weak, nonatomic) IBOutlet UIButton *signUpButton;
 
-@interface ViewController : UIViewController
-
+@property (weak, nonatomic) IBOutlet UIStackView *mainStack;
+@property (weak, nonatomic) IBOutlet UIButton *loginButton;
 
 @end
 

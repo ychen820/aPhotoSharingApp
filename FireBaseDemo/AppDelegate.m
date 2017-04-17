@@ -5,19 +5,55 @@
 //  Created by Nathan Chen on 4/13/17.
 //  Copyright © 2017 Nathan Chen. All rights reserved.
 //
-
+#import "ProfileViewController.h"
 #import "AppDelegate.h"
-
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
+#import "CustomNavController.h"
+@import Firebase;
 @interface AppDelegate ()
-
 @end
 
 @implementation AppDelegate
 
+//  AppDelegate.m
+
+
+
+
+
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    [FIRApp configure];
+    [[FBSDKApplicationDelegate sharedInstance] application:application
+                             didFinishLaunchingWithOptions:launchOptions];
+
+    if([[FIRAuth auth]currentUser])
+        NSLog(@"user");
+    if([FBSDKAccessToken currentAccessToken]){
+        NSLog(@"facebook");
+        CustomNavController *nav=[[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"profileNav"];
+         [self.window makeKeyAndVisible];
+        [self.window.rootViewController presentViewController:nav animated:YES completion:nil];
+        
+    }
+    
+    [[UINavigationBar appearance] setBackgroundColor:[UIColor whiteColor]];
+    [[UINavigationBar appearance] setShadowImage:[[UIImage alloc] init]];
+    
     // Override point for customization after application launch.
     return YES;
+}
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    
+    BOOL handled = [[FBSDKApplicationDelegate sharedInstance] application:application
+                                                                  openURL:url
+                                                        sourceApplication:sourceApplication
+                                                               annotation:annotation
+                    ];
+    // Add any custom logic here.
+    return handled;
 }
 
 
