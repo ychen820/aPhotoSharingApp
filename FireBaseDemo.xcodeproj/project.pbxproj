@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C50BD2091EA5B75A005F67CB /* ProfileTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C50BD2081EA5B75A005F67CB /* ProfileTableViewCell.m */; };
+		C50BD20B1EA5BF70005F67CB /* profile-pictures.png in Resources */ = {isa = PBXBuildFile; fileRef = C50BD20A1EA5BF70005F67CB /* profile-pictures.png */; };
 		C52735121EA3EA7D00AD05DA /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C52735111EA3EA7D00AD05DA /* ProfileViewController.m */; };
 		C56980781EA3CCF40088F922 /* Facebook Button.png in Resources */ = {isa = PBXBuildFile; fileRef = C56980771EA3CCF40088F922 /* Facebook Button.png */; };
 		C56B52891EA078B900FD1516 /* BG Image.png in Resources */ = {isa = PBXBuildFile; fileRef = C56B52881EA078B900FD1516 /* BG Image.png */; };
@@ -26,6 +28,9 @@
 		C5A1AAF01EA2CF030027AF7B /* input line.png in Resources */ = {isa = PBXBuildFile; fileRef = C5A1AAEF1EA2CF030027AF7B /* input line.png */; };
 		C5A1AAF31EA2F63C0027AF7B /* UIView+firstResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A1AAF21EA2F63C0027AF7B /* UIView+firstResponder.m */; };
 		C5A1AAF61EA30F790027AF7B /* FireBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C5A1AAF51EA30F790027AF7B /* FireBaseManager.m */; };
+		C5B4A1141EA69A8E00E0FD08 /* ImagePostViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5B4A1131EA69A8E00E0FD08 /* ImagePostViewController.m */; };
+		C5B4A1161EA6A61B00E0FD08 /* plus_math1600.png in Resources */ = {isa = PBXBuildFile; fileRef = C5B4A1151EA6A61B00E0FD08 /* plus_math1600.png */; };
+		C5B4A11A1EA6A72C00E0FD08 /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = C5B4A1191EA6A72C00E0FD08 /* camera.png */; };
 		C5C3C4791EA11E3000D75F06 /* UIView+Animate.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C3C4781EA11E3000D75F06 /* UIView+Animate.m */; };
 		C5C3C47C1EA1297C00D75F06 /* FormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C3C47B1EA1297C00D75F06 /* FormViewController.m */; };
 		C5C3C47F1EA12D3F00D75F06 /* CustomNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5C3C47E1EA12D3F00D75F06 /* CustomNavController.m */; };
@@ -39,6 +44,9 @@
 
 /* Begin PBXFileReference section */
 		0780739E30F52D9C3C2C2A31 /* libPods-FireBaseDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FireBaseDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C50BD2071EA5B75A005F67CB /* ProfileTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfileTableViewCell.h; path = FireBaseDemo/ProfileTableViewCell.h; sourceTree = "<group>"; };
+		C50BD2081EA5B75A005F67CB /* ProfileTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileTableViewCell.m; path = FireBaseDemo/ProfileTableViewCell.m; sourceTree = "<group>"; };
+		C50BD20A1EA5BF70005F67CB /* profile-pictures.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile-pictures.png"; sourceTree = "<group>"; };
 		C52735101EA3EA7D00AD05DA /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ProfileViewController.h; path = FireBaseDemo/ProfileViewController.h; sourceTree = "<group>"; };
 		C52735111EA3EA7D00AD05DA /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ProfileViewController.m; path = FireBaseDemo/ProfileViewController.m; sourceTree = "<group>"; };
 		C56980771EA3CCF40088F922 /* Facebook Button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Facebook Button.png"; sourceTree = "<group>"; };
@@ -65,6 +73,10 @@
 		C5A1AAF21EA2F63C0027AF7B /* UIView+firstResponder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+firstResponder.m"; sourceTree = "<group>"; };
 		C5A1AAF41EA30F790027AF7B /* FireBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FireBaseManager.h; sourceTree = "<group>"; };
 		C5A1AAF51EA30F790027AF7B /* FireBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FireBaseManager.m; sourceTree = "<group>"; };
+		C5B4A1121EA69A8E00E0FD08 /* ImagePostViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePostViewController.h; sourceTree = "<group>"; };
+		C5B4A1131EA69A8E00E0FD08 /* ImagePostViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePostViewController.m; sourceTree = "<group>"; };
+		C5B4A1151EA6A61B00E0FD08 /* plus_math1600.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus_math1600.png; sourceTree = "<group>"; };
+		C5B4A1191EA6A72C00E0FD08 /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
 		C5C3C4771EA11E3000D75F06 /* UIView+Animate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Animate.h"; sourceTree = "<group>"; };
 		C5C3C4781EA11E3000D75F06 /* UIView+Animate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Animate.m"; sourceTree = "<group>"; };
 		C5C3C47A1EA1297C00D75F06 /* FormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FormViewController.h; path = FireBaseDemo/FormViewController.h; sourceTree = "<group>"; };
@@ -115,13 +127,16 @@
 		C56B528C1EA0793A00FD1516 /* UIImages */ = {
 			isa = PBXGroup;
 			children = (
+				C5B4A1151EA6A61B00E0FD08 /* plus_math1600.png */,
 				C5A1AAEA1EA2A6850027AF7B /* NavBar */,
 				C56B528A1EA0793500FD1516 /* UI8_Logo.png */,
+				C50BD20A1EA5BF70005F67CB /* profile-pictures.png */,
 				C5D5E1071EA419A8005A3111 /* facebook-app-logo.png */,
 				C56B52881EA078B900FD1516 /* BG Image.png */,
 				C56980771EA3CCF40088F922 /* Facebook Button.png */,
 				C5D5E1051EA3FED6005A3111 /* settings.png */,
 				C56B528D1EA0798400FD1516 /* login.png */,
+				C5B4A1191EA6A72C00E0FD08 /* camera.png */,
 				C5A1AAEF1EA2CF030027AF7B /* input line.png */,
 				C56B52911EA08F0600FD1516 /* signUp.png */,
 				C56B528F1EA079A700FD1516 /* ButtonEmpty.png */,
@@ -195,6 +210,10 @@
 				C5C3C47B1EA1297C00D75F06 /* FormViewController.m */,
 				C5D5E10F1EA48C53005A3111 /* FriendsTableView.h */,
 				C5D5E1101EA48C53005A3111 /* FriendsTableView.m */,
+				C50BD2071EA5B75A005F67CB /* ProfileTableViewCell.h */,
+				C50BD2081EA5B75A005F67CB /* ProfileTableViewCell.m */,
+				C5B4A1121EA69A8E00E0FD08 /* ImagePostViewController.h */,
+				C5B4A1131EA69A8E00E0FD08 /* ImagePostViewController.m */,
 			);
 			name = UIControllers;
 			path = ..;
@@ -283,6 +302,8 @@
 				C56B528E1EA0798400FD1516 /* login.png in Resources */,
 				C58D557F1E9FCA9C006C799D /* GoogleService-Info.plist in Resources */,
 				C56B52921EA08F0600FD1516 /* signUp.png in Resources */,
+				C5B4A11A1EA6A72C00E0FD08 /* camera.png in Resources */,
+				C50BD20B1EA5BF70005F67CB /* profile-pictures.png in Resources */,
 				C58D55741E9FCA81006C799D /* Assets.xcassets in Resources */,
 				C5A1AAEE1EA2A6A80027AF7B /* close.png in Resources */,
 				C5D5E1081EA419A8005A3111 /* facebook-app-logo.png in Resources */,
@@ -294,6 +315,7 @@
 				C58D55721E9FCA80006C799D /* Main.storyboard in Resources */,
 				C56B52891EA078B900FD1516 /* BG Image.png in Resources */,
 				C56980781EA3CCF40088F922 /* Facebook Button.png in Resources */,
+				C5B4A1161EA6A61B00E0FD08 /* plus_math1600.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,6 +381,8 @@
 				C52735121EA3EA7D00AD05DA /* ProfileViewController.m in Sources */,
 				C58D556F1E9FCA80006C799D /* ViewController.m in Sources */,
 				C58D556C1E9FCA80006C799D /* AppDelegate.m in Sources */,
+				C50BD2091EA5B75A005F67CB /* ProfileTableViewCell.m in Sources */,
+				C5B4A1141EA69A8E00E0FD08 /* ImagePostViewController.m in Sources */,
 				C5C3C4791EA11E3000D75F06 /* UIView+Animate.m in Sources */,
 				C5C3C47C1EA1297C00D75F06 /* FormViewController.m in Sources */,
 				C5A1AAF31EA2F63C0027AF7B /* UIView+firstResponder.m in Sources */,

@@ -12,6 +12,7 @@
 #import "CustomNavController.h"
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
+#import "UIViewController+simpleAlert.h"
 @import Firebase;
 @import FirebaseDatabase;
 
@@ -50,11 +51,6 @@
 }
 -(void)keyboardWillShow:(NSNotification *)notification{
     [super keyboardWillShow:notification];
-    CGFloat currentHeight=self.view.frame.size.height;
-    
-    self.mainStack.spacing=currentHeight*0.06;
-    NSLog(@"stack spacing%f",self.mainStack.spacing);
-    [self.mainStack layoutIfNeeded];
 }
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
@@ -66,6 +62,19 @@
 
   
   
+}
+- (IBAction)forgetPwdAction:(UIButton *)sender {
+    [[FIRAuth auth]
+     sendPasswordResetWithEmail:self.emailTextField.text
+     completion:^(NSError *_Nullable error) {
+         if(error==nil){
+             [self presentAlertWithTitle:@"Boop" message:@"Password Reset Email Has Been Sent!" buttonTitle:@"OK" withAction:nil];
+         }
+         else{
+             NSLog(@"forgetPwdAction error:%@",error.localizedDescription);
+         }
+        
+     }];
 }
 - (IBAction)loginAction:(UIButton *)sender {
     BOOL isempty=NO;
@@ -122,22 +131,26 @@ message:error.localizedDescription
                  else
                      if ([FBSDKAccessToken currentAccessToken]) {
                          NSMutableDictionary* parameters = [NSMutableDictionary dictionary];
-                         [parameters setValue:@"id,name,email" forKey:@"fields"];
-                         [[[FBSDKGraphRequest alloc]initWithGraphPath:@"me" parameters:parameters]startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection, id result, NSError *error) {
-                             NSLog(@"in");
-                             NSMutableDictionary *dict=[NSMutableDictionary dictionaryWithDictionary:(NSDictionary *)result];
-                             [dict setValue:@"facebook" forKey:@"provider"];
-                             if (error==nil) {
-                                 
-                                     [[[self.ref child:@"users"]child:user.uid]setValue:dict];
-                                     NSLog(@"%@",result);
-                                     
-                                 }
-                             
-                             else
-                                 NSLog(@"error from FBGraph%@",error);
-                             
-                         }];
+                         [parameters setValue:@"id,name,email,picture" forKey:@"fields"];
+                         [[[FBSDKGraphRequest alloc] initWithGraphPath:@"me" parameters:parameters]
+                          startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection, id result, NSError *error) {
+                              NSMutableDictionary *dict=[NSMutableDictionary dictionaryWithDictionary:(NSDictionary *)result];
+                              NSMutableDictionary *publicDict=[[NSMutableDictionary alloc]init];
+                              NSString *pictureURL = [NSString stringWithFormat:@"https://graph.facebook.com/%@/picture?type=large",result[@"id"]];
+                              [dict setValue:@"facebook" forKey:@"provider"];
+                              [dict setValue:pictureURL forKey:@"picture"];
+                              [publicDict setValue:dict[@"name"] forKey:@"name"];
+                              [publicDict setValue:dict[@"picture"] forKey:@"picture"];
+
+                              if (error==nil) {
+                                  
+                                  [[[self.ref child:@"users"]child:user.uid]setValue:dict];
+                                  [[[self.ref child:@"public"]child:user.uid]setValue:publicDict];
+                                  NSLog(@"%@",result);
+                                  
+                                  
+                              }
+                          }];
                          CustomNavController *nav=[self.storyboard instantiateViewControllerWithIdentifier:@"profileNav"];
                          [self presentViewController:nav animated:YES completion:nil];
                      }

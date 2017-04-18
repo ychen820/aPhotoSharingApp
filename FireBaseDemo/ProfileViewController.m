@@ -38,7 +38,6 @@
         [[FIRAuth auth]signInWithCredential:credential completion:^(FIRUser * _Nullable user, NSError * _Nullable error) {
             [[[self.ref child:@"users"] child:user.uid] observeSingleEventOfType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
                 // Get user value
-                NSLog(@"%@",snapshot.value);
                 if([snapshot hasChildren]){
                NSString *username=snapshot.value[@"name"];
                 self.navigationItem.title=@"Profile";

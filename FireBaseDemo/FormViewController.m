@@ -51,35 +51,7 @@
     [textField resignFirstResponder];
     return YES;
 }
-- (IBAction)signUpAction:(UIButton *)sender {
-    for(UITextField *textfield in self.textFields){
-    if([textfield.text isEqualToString:@""] || (textfield.text==nil)){
-        [textfield becomeFirstResponder];
-    }
-    }
-    NSString *name=self.nameTextField.text;
-    NSString *email=self.emailTextField.text;
-    NSString *pwd=self.pwdTextField.text;
-    NSString *pwdConfirm=self.confirmTextField.text;
-    if(![pwd isEqualToString:pwdConfirm]){
-        [self presentAlertWithTitle:@"Login Error" message:@"Please Confirm The Password" buttonTitle:@"Continue" withAction:^{
-             [self.pwdTextField becomeFirstResponder];
-        }];
-       
-    }
-        
-    [[FIRAuth auth]createUserWithEmail:email password:pwd completion:^(FIRUser * _Nullable user, NSError * _Nullable error) {
-        if(!error){
-            NSLog(@"%@",user.uid);
-            [[FIRAuth auth]signInWithEmail:email password:pwd completion:^(FIRUser * _Nullable user, NSError * _Nullable error) {
-                [[[self.ref child:@"users"]child:user.uid]setValue:@{@"name":name,@"email":email,@"provider":@"email"}];
-            }];
-        }
-        else
-            [self presentAlertWithTitle:@"Login Error" message:error.localizedDescription buttonTitle:@"Continue" withAction:nil];
-    }];
 
-}
 #pragma mark --NavBarSetUp
 -(void)setUpNavbar{
     //Set Left Button
@@ -151,10 +123,46 @@
     }];
     
 }
-#pragma mark --Facebook SignUP
+#pragma mark - SignUp Functions
+- (IBAction)signUpAction:(UIButton *)sender {
+    for(UITextField *textfield in self.textFields){
+        if([textfield.text isEqualToString:@""] || (textfield.text==nil)){
+            [textfield becomeFirstResponder];
+        }
+    }
+    NSString *name=self.nameTextField.text;
+    NSString *email=self.emailTextField.text;
+    NSString *pwd=self.pwdTextField.text;
+    NSString *pwdConfirm=self.confirmTextField.text;
+    if(![pwd isEqualToString:pwdConfirm]){
+        [self presentAlertWithTitle:@"Login Error" message:@"Please Confirm The Password" buttonTitle:@"Continue" withAction:^{
+            [self.pwdTextField becomeFirstResponder];
+        }];
+        
+    }
+    
+    [[FIRAuth auth]createUserWithEmail:email password:pwd completion:^(FIRUser * _Nullable user, NSError * _Nullable error) {
+        if(!error){
+            NSLog(@"%@",user.uid);
+            [[FIRAuth auth]signInWithEmail:email password:pwd completion:^(FIRUser * _Nullable user, NSError * _Nullable error) {
+                if(!error){
+                [[[self.ref child:@"users"]child:user.uid]setValue:@{@"name":name,@"email":email,@"provider":@"email"}];
+                [[[self.ref child:@"public"]child:user.uid]setValue:@{@"name":name}];
+                    CustomNavController *nav=[self.storyboard instantiateViewControllerWithIdentifier:@"profileNav"];
+                    [self presentViewController:nav animated:YES completion:nil];
+
+                }
+                
+            }];
+        }
+        else
+            [self presentAlertWithTitle:@"Login Error" message:error.localizedDescription buttonTitle:@"Continue" withAction:nil];
+    }];
+    
+}
 - (IBAction)fbSignUp:(id)sender {
     FBSDKLoginManager *login = [[FBSDKLoginManager alloc] init];
-    [login setLoginBehavior:FBSDKLoginBehaviorSystemAccount];
+    [login setLoginBehavior:FBSDKLoginBehaviorNative];
     [login
      logInWithReadPermissions: @[@"public_profile",@"email"]
      fromViewController:self
@@ -178,10 +186,18 @@
                          [[[FBSDKGraphRequest alloc] initWithGraphPath:@"me" parameters:parameters]
                           startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection, id result, NSError *error) {
                               NSMutableDictionary *dict=[NSMutableDictionary dictionaryWithDictionary:(NSDictionary *)result];
+                              NSMutableDictionary *publicDict=[[NSMutableDictionary alloc]init];
+                              NSString *pictureURL = [NSString stringWithFormat:@"https://graph.facebook.com/%@/picture?type=large",result[@"id"]];
                               [dict setValue:@"facebook" forKey:@"provider"];
-                              if (error!=nil) {
+                              [dict setValue:pictureURL forKey:@"picture"];
+                              [publicDict setValue:dict[@"name"] forKey:@"name"];
+                              [publicDict setValue:dict[@"picture"] forKey:@"picture"];
+                              
+                              
+                              if (error==nil) {
                                  
                                   [[[self.ref child:@"users"]child:user.uid]setValue:dict];
+                                  [[[self.ref child:@"public"]child:user.uid]setValue:publicDict];
                                   NSLog(@"%@",result);
                                      
                                   

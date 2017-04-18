@@ -16,7 +16,7 @@ UIAlertController* alert = [UIAlertController alertControllerWithTitle:title
 
 UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:btnTitle style:UIAlertActionStyleDefault
                                                       handler:^(UIAlertAction * _Nonnull action) {
-                                                          completeAction();
+                                           if(completeAction!=nil)             completeAction();
                                                       }];
 
 [alert addAction:defaultAction];

@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface FriendsTableView : UITableViewController
-
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentButton;
 @end

@@ -46,8 +46,9 @@
     CGFloat differ=keyboardTopY-marginToKeyboard-self.textFieldOrigin.y;
     CGFloat keyboardHeight=self.keyboardRect.CGRectValue.size.height;
     NSLog(@"from kb will show kbdtopy:%f,textfieldY%f,differ%f,height %f",keyboardTopY,self.textFieldOrigin.y,differ,keyboardHeight);
-    if(self.view.frame.size.height==self.originalFrame.size.height){
-        CGRect newFrame=CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y, self.view.frame.size.width, self.view.frame.size.height-keyboardHeight);
+            CGRect newFrame=CGRectMake(self.view.frame.origin.x, self.view.frame.origin.y, self.view.frame.size.width, self.originalFrame.size.height-keyboardHeight);
+    if(self.view.frame.size.height!=newFrame.size.height){
+
         [self.view setFrame:newFrame];
         [UIView animateWithDuration:0.5 animations:^{
             
