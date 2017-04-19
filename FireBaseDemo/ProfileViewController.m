@@ -44,7 +44,7 @@
                     self.nameLabel.text=username;
                 [UIView animateWithDuration:0.5 animations:^{
                     self.nameLabel.alpha=1;
-                    self.welcomeLabel.alpha=1;
+         
                 }];
                 }
                 else{

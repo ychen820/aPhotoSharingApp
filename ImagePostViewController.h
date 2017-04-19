@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "YCKbViewController.h"
-
+#import "FireBaseManager.h"
 @interface ImagePostViewController : YCKbViewController<UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 @property (weak, nonatomic) IBOutlet UIImageView *feedImageView;
+@property (weak, nonatomic) IBOutlet UITextView *postTextView;
 
 @end

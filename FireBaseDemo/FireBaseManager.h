@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 @import Firebase;
-@import FirebaseDatabase;
 @interface FireBaseManager : NSObject
-@property(strong ,nonatomic)FIRDatabaseReference *ref;
+@property(strong ,nonatomic)FIRDatabaseReference *databaseRef;
+@property(strong,nonatomic)FIRStorageReference *storageRef;
 +(instancetype)sharedFireBaseManager;
 
 @end

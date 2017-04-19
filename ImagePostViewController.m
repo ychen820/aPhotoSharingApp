@@ -7,9 +7,8 @@
 //
 
 #import "ImagePostViewController.h"
-
+@class FIRStorageReference;
 @interface ImagePostViewController ()
-
 @end
 
 @implementation ImagePostViewController
@@ -25,6 +24,7 @@
 }
 -(void)keyboardWillShow:(NSNotification *)notification{
     [super keyboardWillShow:notification];
+    
 }
 - (IBAction)imagePickerAction:(id)sender {
     UIImagePickerController *ipc=[[UIImagePickerController alloc]init];
@@ -38,9 +38,35 @@
     [self presentViewController:ipc animated:YES completion:nil];
 }
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingImage:(UIImage *)image editingInfo:(nullable NSDictionary<NSString *,id> *)editingInfo{
-    self.imgView.image=image;
+    self.feedImageView.image=image;
+   [self dismissViewControllerAnimated:YES completion:nil];
+    
+}
+- (IBAction)postAction:(UIBarButtonItem *)sender {
+    FIRDatabaseReference *databaseRef=[[FireBaseManager sharedFireBaseManager].databaseRef root];
+    FIRStorageReference *storageRef=[[FireBaseManager sharedFireBaseManager].storageRef root];
+    NSTimeInterval timeInsec=[[NSDate date]timeIntervalSince1970];
+    databaseRef=[databaseRef child:@"posts"];
+    storageRef=[storageRef child:[NSString stringWithFormat:@"images/img_%f.png",timeInsec]];
+    NSData *imageData=UIImagePNGRepresentation(self.feedImageView.image);
+    FIRStorageUploadTask *uploadTask=[storageRef putData:imageData metadata:nil completion:^(FIRStorageMetadata * _Nullable metadata, NSError * _Nullable error) {
+        if(error){
+            NSLog(@"imagePicker:%@",error.description);
+        }
+        else{
+            NSURL *imageURL=metadata.downloadURL;
+            NSLog(@"%@",imageURL);
+            
+            NSDictionary *dict=@{@"image":[imageURL absoluteString],@"author":[FIRAuth auth].currentUser.uid,@"text":self.postTextView.text};
+            FIRDatabaseReference *postsRef=[databaseRef childByAutoId];
+            NSString *postId=postsRef.key;
+            [postsRef setValue:dict];
+            [[[[[[databaseRef root]child:@"public"]child:[FIRAuth auth].currentUser.uid]child:@"posts"]child:postId]setValue:@YES];
+        }
+    }];
     [self dismissViewControllerAnimated:YES completion:nil];
     
+
 }
 
 /*

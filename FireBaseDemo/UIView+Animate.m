@@ -7,7 +7,6 @@
 //
 
 #import "UIView+Animate.h"
-
 @implementation UIView (Animate)
 -(void)uiMoveAnimationWithOffSet:(NSInteger)offset withOptions:(NSInteger)option{
 CGRect original=self.frame;

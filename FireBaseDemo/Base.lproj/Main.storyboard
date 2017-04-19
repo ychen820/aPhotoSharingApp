@@ -211,7 +211,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jye-lr-fc8">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jye-lr-fc8">
                                 <rect key="frame" x="0.0" y="172" width="320" height="174"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="174" id="7dd-fK-vbp"/>
@@ -231,9 +231,16 @@
                             <constraint firstItem="jye-lr-fc8" firstAttribute="leading" secondItem="fCW-Bm-KoF" secondAttribute="leading" id="yW6-TQ-omk"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Post Feed" id="cFd-I5-ugk"/>
+                    <navigationItem key="navigationItem" title="Post Feed" id="cFd-I5-ugk">
+                        <barButtonItem key="rightBarButtonItem" systemItem="reply" id="xtQ-Ye-fG9">
+                            <connections>
+                                <action selector="postAction:" destination="wX2-kA-PxZ" id="Bkm-VC-nYh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="feedImageView" destination="jye-lr-fc8" id="Ihr-II-40g"/>
+                        <outlet property="postTextView" destination="oHu-HC-0oM" id="K91-rz-6OE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9OB-Py-gcM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -411,13 +418,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EW8-os-h9o">
-                                <rect key="frame" x="124.5" y="89" width="71" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AeW-Ek-0e5">
+                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.0" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AeW-Ek-0e5">
                                 <rect key="frame" x="160" y="118" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -437,16 +438,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="AeW-Ek-0e5" firstAttribute="top" secondItem="EW8-os-h9o" secondAttribute="bottom" constant="8" id="7MQ-fz-Cy2"/>
                             <constraint firstItem="JlR-dU-AdT" firstAttribute="top" secondItem="Ni3-NT-BNK" secondAttribute="bottom" constant="20" id="Af4-zM-Qz4"/>
-                            <constraint firstItem="EW8-os-h9o" firstAttribute="centerX" secondItem="VGL-f7-inW" secondAttribute="centerX" id="NfQ-R0-MaS"/>
                             <constraint firstItem="AeW-Ek-0e5" firstAttribute="centerX" secondItem="VGL-f7-inW" secondAttribute="centerX" id="W6p-Cl-GjF"/>
                             <constraint firstItem="Ni3-NT-BNK" firstAttribute="centerX" secondItem="VGL-f7-inW" secondAttribute="centerX" id="hOM-bh-pqj"/>
-                            <constraint firstItem="EW8-os-h9o" firstAttribute="top" secondItem="yPd-Q7-eTh" secondAttribute="bottom" constant="25" id="jt1-hW-RfL"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="BIY-qw-UCY">
-                        <barButtonItem key="leftBarButtonItem" systemItem="add" id="eCk-dM-1NE">
+                        <barButtonItem key="leftBarButtonItem" systemItem="search" id="eCk-dM-1NE">
                             <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             <connections>
                                 <action selector="friendsListButtonAction:" destination="Gnh-pU-epV" id="2Ww-jB-jG3"/>
@@ -462,7 +460,6 @@
                     </navigationItem>
                     <connections>
                         <outlet property="nameLabel" destination="AeW-Ek-0e5" id="TOJ-Zq-bSv"/>
-                        <outlet property="welcomeLabel" destination="EW8-os-h9o" id="CZX-qG-cth"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kRQ-TZ-kgA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -585,4 +582,5 @@
         <image name="input line.png" width="460" height="1"/>
         <image name="signUp.png" width="310" height="80"/>
     </resources>
+    <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
 </document>

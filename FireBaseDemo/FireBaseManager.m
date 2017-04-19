@@ -17,23 +17,13 @@
     });
     return sharedFireBaseManager;
 }
--(void)fireBaseSetup{
-    self.ref=[[FIRDatabase database]reference];
-    
-   /* [[FIRAuth auth]signInWithEmail:@"abc@gmail.com" password:@"iloveios" completion:^(FIRUser * _Nullable user, NSError * _Nullable error) {
-        if(error==nil){
-            [[[[self.ref child:@"users"] child:user.uid] child:@"firstName"]setValue:@"Chen"];
-        }
-    }];
-    [[FIRAuth auth]createUserWithEmail:@"abc@gmail.com" password:@"iloveios" completion:^(FIRUser * _Nullable user, NSError * _Nullable error) {
-        if(error==nil){
-            NSLog(@"%@",user.uid);
-        }
-    }];
-    [[self.ref child:@"stock" ] observeEventType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
-        NSLog(@"%@",snapshot.value);
-        
-    }];
-  */
+-(instancetype)init{
+    self=[super init];
+    if(self){
+         self.databaseRef=[[FIRDatabase database]reference];
+        self.storageRef=[[FIRStorage storage]reference];
+    }
+    return self;
 }
+
 @end

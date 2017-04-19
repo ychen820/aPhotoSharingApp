@@ -41,27 +41,29 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-    
-    <key>CFBundleURLTypes</key>
-    <array>
-        <dict>
-            <key>CFBundleURLSchemes</key>
-            <array>
-                <string>fb277274392697961</string>
-            </array>
-        </dict>
-    </array>
-    <key>FacebookAppID</key>
-    <string>277274392697961</string>
-    <key>FacebookDisplayName</key>
-    <string>Boop</string>
-    
-    <key>LSApplicationQueriesSchemes</key>
-    <array>
-        <string>fbapi</string>
-        <string>fb-messenger-api</string>
-        <string>fbauth2</string>
-        <string>fbshareextension</string>
-    </array>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>fb277274392697961</string>
+			</array>
+		</dict>
+	</array>
+	<key>FacebookAppID</key>
+	<string>277274392697961</string>
+	<key>FacebookDisplayName</key>
+	<string>Boop</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>fbapi</string>
+		<string>fb-messenger-api</string>
+		<string>fbauth2</string>
+		<string>fbshareextension</string>
+	</array>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Will Use Your Photo To Upload</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Will Use Your Camera to Take Photos</string>
 </dict>
 </plist>
