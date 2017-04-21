@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ProfileViewController : UIViewController
+#import "FireBaseManager.h"
+#import "FeedsTableViewCell.h"
+#import "ImagePostViewController.h"
+@interface ProfileViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+
+@property (weak, nonatomic) IBOutlet UITableView *feedTableView;
+
 
 @end

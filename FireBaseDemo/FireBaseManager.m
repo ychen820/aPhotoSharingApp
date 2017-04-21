@@ -25,5 +25,20 @@
     }
     return self;
 }
+-(void)loadAllDataUnderRef:(FIRDatabaseQuery *)databaseRef withCompletion:(completion)handler{
+   
+    dispatch_sync(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{
+        [databaseRef observeSingleEventOfType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
+            if([snapshot hasChildren]){
+                NSDictionary *allData=[NSDictionary dictionaryWithDictionary:snapshot.value];
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    handler(allData);
+                });
 
+            }
+        }];
+       
+      
+    });
+   }
 @end

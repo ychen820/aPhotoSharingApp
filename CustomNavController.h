@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "ProfileViewController.h"
 @interface CustomNavController : UINavigationController
-
 @end

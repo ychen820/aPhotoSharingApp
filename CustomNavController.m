@@ -15,11 +15,10 @@
 UIImageView *navBarHairlineImageView;
 - (void)viewDidLoad {
     [super viewDidLoad];
-    navBarHairlineImageView = [self findHairlineImageViewUnder:self.navigationBar];
-    navBarHairlineImageView.hidden = YES;
-      [self.navigationBar setBarTintColor:[UIColor whiteColor]];
-    [self.navigationBar setTranslucent:NO];
+  //  navBarHairlineImageView = [self findHairlineImageViewUnder:self.navigationBar];
+  //  navBarHairlineImageView.hidden = YES;
     
+    [self.navigationBar setBackgroundColor:[UIColor clearColor]];
       // Do any additional setup after loading the view.
 }
 

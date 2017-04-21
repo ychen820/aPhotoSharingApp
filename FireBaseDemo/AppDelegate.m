@@ -38,8 +38,8 @@
         
     }
     
-    [[UINavigationBar appearance] setBackgroundColor:[UIColor whiteColor]];
-    [[UINavigationBar appearance] setShadowImage:[[UIImage alloc] init]];
+  //  [[UINavigationBar appearance] setBackgroundColor:[UIColor whiteColor]];
+   // [[UINavigationBar appearance] setShadowImage:[[UIImage alloc] init]];
     
     // Override point for customization after application launch.
     return YES;

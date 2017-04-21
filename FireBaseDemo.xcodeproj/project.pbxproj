@@ -39,6 +39,8 @@
 		C5D5E10B1EA46561005A3111 /* UIViewController+simpleAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D5E10A1EA46561005A3111 /* UIViewController+simpleAlert.m */; };
 		C5D5E10E1EA46B73005A3111 /* YCKbViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D5E10D1EA46B73005A3111 /* YCKbViewController.m */; };
 		C5D5E1111EA48C53005A3111 /* FriendsTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5D5E1101EA48C53005A3111 /* FriendsTableView.m */; };
+		C5FD3C921EA70758003EBE8E /* FeedsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FD3C911EA70758003EBE8E /* FeedsTableViewCell.m */; };
+		C5FD3C951EA7B93C003EBE8E /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = C5FD3C941EA7B93C003EBE8E /* Post.m */; };
 		C93222F731D5FE2395C2ABA7 /* libPods-FireBaseDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0780739E30F52D9C3C2C2A31 /* libPods-FireBaseDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +93,10 @@
 		C5D5E10D1EA46B73005A3111 /* YCKbViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YCKbViewController.m; path = ../YCKbViewController.m; sourceTree = "<group>"; };
 		C5D5E10F1EA48C53005A3111 /* FriendsTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FriendsTableView.h; path = FireBaseDemo/FriendsTableView.h; sourceTree = "<group>"; };
 		C5D5E1101EA48C53005A3111 /* FriendsTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FriendsTableView.m; path = FireBaseDemo/FriendsTableView.m; sourceTree = "<group>"; };
+		C5FD3C901EA70758003EBE8E /* FeedsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FeedsTableViewCell.h; path = FireBaseDemo/FeedsTableViewCell.h; sourceTree = "<group>"; };
+		C5FD3C911EA70758003EBE8E /* FeedsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FeedsTableViewCell.m; path = FireBaseDemo/FeedsTableViewCell.m; sourceTree = "<group>"; };
+		C5FD3C931EA7B93C003EBE8E /* Post.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
+		C5FD3C941EA7B93C003EBE8E /* Post.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
 		F322859219DBBF37A2B31DC9 /* Pods-FireBaseDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireBaseDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-FireBaseDemo/Pods-FireBaseDemo.release.xcconfig"; sourceTree = "<group>"; };
 		FA24A3B743F89548CD1DDFF6 /* Pods-FireBaseDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireBaseDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FireBaseDemo/Pods-FireBaseDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -166,6 +172,7 @@
 			isa = PBXGroup;
 			children = (
 				C5A1AAF81EA31E2F0027AF7B /* Helpers */,
+				C5FD3C961EA7B955003EBE8E /* Mdels */,
 				C5A1AAF71EA31DF50027AF7B /* UIControllers */,
 				C56B528C1EA0793A00FD1516 /* UIImages */,
 				C58D556A1E9FCA80006C799D /* AppDelegate.h */,
@@ -214,6 +221,8 @@
 				C50BD2081EA5B75A005F67CB /* ProfileTableViewCell.m */,
 				C5B4A1121EA69A8E00E0FD08 /* ImagePostViewController.h */,
 				C5B4A1131EA69A8E00E0FD08 /* ImagePostViewController.m */,
+				C5FD3C901EA70758003EBE8E /* FeedsTableViewCell.h */,
+				C5FD3C911EA70758003EBE8E /* FeedsTableViewCell.m */,
 			);
 			name = UIControllers;
 			path = ..;
@@ -234,6 +243,15 @@
 				C5D5E10D1EA46B73005A3111 /* YCKbViewController.m */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		C5FD3C961EA7B955003EBE8E /* Mdels */ = {
+			isa = PBXGroup;
+			children = (
+				C5FD3C931EA7B93C003EBE8E /* Post.h */,
+				C5FD3C941EA7B93C003EBE8E /* Post.m */,
+			);
+			name = Mdels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -381,6 +399,7 @@
 				C52735121EA3EA7D00AD05DA /* ProfileViewController.m in Sources */,
 				C58D556F1E9FCA80006C799D /* ViewController.m in Sources */,
 				C58D556C1E9FCA80006C799D /* AppDelegate.m in Sources */,
+				C5FD3C951EA7B93C003EBE8E /* Post.m in Sources */,
 				C50BD2091EA5B75A005F67CB /* ProfileTableViewCell.m in Sources */,
 				C5B4A1141EA69A8E00E0FD08 /* ImagePostViewController.m in Sources */,
 				C5C3C4791EA11E3000D75F06 /* UIView+Animate.m in Sources */,
@@ -388,6 +407,7 @@
 				C5A1AAF31EA2F63C0027AF7B /* UIView+firstResponder.m in Sources */,
 				C5C3C47F1EA12D3F00D75F06 /* CustomNavController.m in Sources */,
 				C58D55691E9FCA80006C799D /* main.m in Sources */,
+				C5FD3C921EA70758003EBE8E /* FeedsTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

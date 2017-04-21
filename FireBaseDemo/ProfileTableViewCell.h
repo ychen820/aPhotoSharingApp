@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import <SDWebImage/UIImageView+WebCache.h>
 @interface ProfileTableViewCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UIImageView *profileImage;

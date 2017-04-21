@@ -144,8 +144,8 @@ message:error.localizedDescription
 
                               if (error==nil) {
                                   
-                                  [[[self.ref child:@"users"]child:user.uid]setValue:dict];
-                                  [[[self.ref child:@"public"]child:user.uid]setValue:publicDict];
+                                  [[[self.ref child:@"users"]child:user.uid]updateChildValues:dict];
+                                  [[[self.ref child:@"public"]child:user.uid]updateChildValues:publicDict];
                                   NSLog(@"%@",result);
                                   
                                   
