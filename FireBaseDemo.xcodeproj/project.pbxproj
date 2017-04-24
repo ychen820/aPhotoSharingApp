@@ -16,6 +16,7 @@
 		C56B528E1EA0798400FD1516 /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = C56B528D1EA0798400FD1516 /* login.png */; };
 		C56B52901EA079A700FD1516 /* ButtonEmpty.png in Resources */ = {isa = PBXBuildFile; fileRef = C56B528F1EA079A700FD1516 /* ButtonEmpty.png */; };
 		C56B52921EA08F0600FD1516 /* signUp.png in Resources */ = {isa = PBXBuildFile; fileRef = C56B52911EA08F0600FD1516 /* signUp.png */; };
+		C57C0C011EABE8010044E5E8 /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C57C0C001EABE8010044E5E8 /* ChatViewController.m */; };
 		C58D55691E9FCA80006C799D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C58D55681E9FCA80006C799D /* main.m */; };
 		C58D556C1E9FCA80006C799D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C58D556B1E9FCA80006C799D /* AppDelegate.m */; };
 		C58D556F1E9FCA80006C799D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C58D556E1E9FCA80006C799D /* ViewController.m */; };
@@ -57,6 +58,8 @@
 		C56B528D1EA0798400FD1516 /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
 		C56B528F1EA079A700FD1516 /* ButtonEmpty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonEmpty.png; sourceTree = "<group>"; };
 		C56B52911EA08F0600FD1516 /* signUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = signUp.png; sourceTree = "<group>"; };
+		C57C0BFF1EABE8010044E5E8 /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChatViewController.h; path = FireBaseDemo/ChatViewController.h; sourceTree = "<group>"; };
+		C57C0C001EABE8010044E5E8 /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChatViewController.m; path = FireBaseDemo/ChatViewController.m; sourceTree = "<group>"; };
 		C58D55641E9FCA80006C799D /* FireBaseDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireBaseDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C58D55681E9FCA80006C799D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C58D556A1E9FCA80006C799D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -223,6 +226,8 @@
 				C5B4A1131EA69A8E00E0FD08 /* ImagePostViewController.m */,
 				C5FD3C901EA70758003EBE8E /* FeedsTableViewCell.h */,
 				C5FD3C911EA70758003EBE8E /* FeedsTableViewCell.m */,
+				C57C0BFF1EABE8010044E5E8 /* ChatViewController.h */,
+				C57C0C001EABE8010044E5E8 /* ChatViewController.m */,
 			);
 			name = UIControllers;
 			path = ..;
@@ -406,6 +411,7 @@
 				C5C3C47C1EA1297C00D75F06 /* FormViewController.m in Sources */,
 				C5A1AAF31EA2F63C0027AF7B /* UIView+firstResponder.m in Sources */,
 				C5C3C47F1EA12D3F00D75F06 /* CustomNavController.m in Sources */,
+				C57C0C011EABE8010044E5E8 /* ChatViewController.m in Sources */,
 				C58D55691E9FCA80006C799D /* main.m in Sources */,
 				C5FD3C921EA70758003EBE8E /* FeedsTableViewCell.m in Sources */,
 			);

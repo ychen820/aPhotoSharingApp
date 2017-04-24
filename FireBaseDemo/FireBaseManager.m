@@ -25,6 +25,7 @@
     }
     return self;
 }
+
 -(void)loadAllDataUnderRef:(FIRDatabaseQuery *)databaseRef withCompletion:(completion)handler{
    
     dispatch_sync(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0), ^{

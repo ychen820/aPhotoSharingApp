@@ -20,6 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.postsArray=[[NSMutableArray alloc]init];
     [self.feedTableView setContentInset:UIEdgeInsetsMake(self.navigationController.navigationBar.frame.size.height, 0, 0, 0)];
     self.feedTableView.tableFooterView=[[UIView alloc]initWithFrame:CGRectZero];
       self.feedTableView.rowHeight=UITableViewAutomaticDimension;
@@ -30,6 +31,7 @@
     //[self addBlurEffect];
     // Do any additional setup after loading the view.
 }
+
 -(void)reloadData:(NSNotification *)notification{
     [self viewWillAppear:YES];
 }
@@ -114,7 +116,7 @@
 }
 #pragma mark - Load Posts From Database
 -(void)loadAllPosts{
-    self.postsArray=[[NSMutableArray alloc]init];
+    [self.postsArray removeAllObjects];
     FIRDatabaseReference *postsRef=[[self.ref root]child:@"posts"];
     FireBaseManager *sharedManager=[FireBaseManager sharedFireBaseManager];
 
@@ -125,7 +127,6 @@
             
                NSMutableDictionary *item=[NSMutableDictionary dictionaryWithDictionary:key.value];
                item[@"key"]=key.key;
-            NSLog(@"key:%@,,%@",key.key,key.value);
                 [self.postsArray addObject:item];
             
                    }
@@ -174,13 +175,13 @@
     [cell.likeButton setImage:[UIImage imageNamed:@"filled-heart"] forState:UIControlStateSelected];
     likesRef=[[[[likesRef child:@"public"]child:[FIRAuth auth].currentUser.uid ] child:@"likes"]child:postKey];
     [likesRef observeSingleEventOfType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
-        NSLog(@"%@",snapshot.value);
+       
         if([snapshot.value isEqual:@YES]){
-            NSLog(@"is Liked");
+       
             cell.likeButton.selected=YES;
         }
         else{
-            NSLog(@"Not Liked!!");
+          
             cell.likeButton.selected=NO;
         }
     }];

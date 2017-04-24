@@ -10,11 +10,15 @@
 #import "ProfileTableViewCell.h"
 #import <SDWebImage/UIImageView+WebCache.h>
 #import "UIViewController+simpleAlert.h"
+#import "ChatViewController.h"
+#import "FireBaseManager.h"
+@import Photos;
 @import Firebase;
 @interface FriendsTableView ()
-@property(nonnull,strong) FIRUser *currentUser;
-@property(nonnull,strong) FIRDatabaseReference *ref;
-@property(nonnull,strong) NSMutableArray *userArray;
+@property(nonatomic,strong) FIRUser *currentUser;
+@property(nonatomic,strong) NSDictionary *currentUserDict;
+@property(nonatomic,strong) FIRDatabaseReference *ref;
+@property(nonatomic,strong) NSMutableArray *userArray;
 @end
 
 @implementation FriendsTableView
@@ -24,6 +28,7 @@
     self.tableView.tableFooterView=[[UIView alloc]init];
     self.ref=[[FIRDatabase database] reference];
     self.currentUser=[[FIRAuth auth]currentUser];
+    [self getCurrentUser];
     [self getAllUsers];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -127,8 +132,35 @@
     
     return cell;
 }
+-(void)getCurrentUser{
+    FIRDatabaseReference *ref=[[FireBaseManager sharedFireBaseManager].databaseRef root];
+
+    [[[ref child:@"users"] child:self.currentUser.uid] observeSingleEventOfType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
+        // Get user value
+        self.currentUserDict=snapshot.value;
+    }];
+    
+}
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    ChatViewController *cvc=[self.storyboard instantiateViewControllerWithIdentifier:@"cvc"];
+     NSDictionary *currentUser=[self.userArray objectAtIndex:indexPath.section];
+    cvc.recipient=currentUser;
+    cvc.senderDisplayName=self.currentUserDict[@"name"];
+    cvc.senderId=self.currentUser.uid;
+    [self.navigationController pushViewController:cvc animated:YES];
+    
    
+
+    
+    
+    
+    
+    
+    
+    
+    
+    //Add Friend Function--- Need to move to other place ---- ////
+   /*
     NSDictionary *currentUser=[self.userArray objectAtIndex:indexPath.section];
      FIRDatabaseReference *friendLocation=[[[[self.ref child:@"users"]child:self.currentUser.uid]child:@"friends"]child:currentUser[@"uid"]];
     [friendLocation observeSingleEventOfType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
@@ -169,7 +201,7 @@
             [friendAlert addAction:cancelAction];
             [self presentViewController:friendAlert animated:YES completion:nil];
         }
-    }];
+    }];  */
   
 }
 

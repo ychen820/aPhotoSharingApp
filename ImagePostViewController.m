@@ -31,14 +31,17 @@
     [super keyboardWillShow:notification];
     
 }
+
+- (IBAction)cancelButton:(UIBarButtonItem *)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+#pragma mark --Configuring Camera Actions--
 -(void)openPhoto{
     self.ipc.sourceType=UIImagePickerControllerSourceTypePhotoLibrary;
     [self presentViewController:self.ipc animated:YES completion:nil];
-
-
-}
-- (IBAction)cancelButton:(UIBarButtonItem *)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    
+    
 }
 -(void)openCamera{
     if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]){
