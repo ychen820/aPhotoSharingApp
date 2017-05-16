@@ -1586,12 +1586,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FireBaseDemo/ChatViewController.m"
-            timestampString = "514707535.148295"
+            timestampString = "514756195.006264"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "319"
-            endingLineNumber = "319"
-            landmarkName = "-collectionView:numberOfItemsInSection:"
+            startingLineNumber = "320"
+            endingLineNumber = "320"
+            landmarkName = "-collectionView:cellForItemAtIndexPath:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1618,11 +1618,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FireBaseDemo/ChatViewController.m"
-            timestampString = "514707321.404476"
+            timestampString = "514756195.006264"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "99"
-            endingLineNumber = "99"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
             landmarkName = "-observeIncomingMessages"
             landmarkType = "7">
             <Locations>
@@ -1666,11 +1666,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FireBaseDemo/ChatViewController.m"
-            timestampString = "514707321.404476"
+            timestampString = "514756195.006264"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "100"
-            endingLineNumber = "100"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
             landmarkName = "-observeIncomingMessages"
             landmarkType = "7">
          </BreakpointContent>
@@ -1682,11 +1682,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FireBaseDemo/ChatViewController.m"
-            timestampString = "514707321.404476"
+            timestampString = "514756195.006264"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "159"
-            endingLineNumber = "159"
+            startingLineNumber = "160"
+            endingLineNumber = "160"
             landmarkName = "-getDataBaseLocation"
             landmarkType = "7">
          </BreakpointContent>
@@ -1698,28 +1698,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FireBaseDemo/ChatViewController.m"
-            timestampString = "514707321.404476"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "161"
-            endingLineNumber = "161"
-            landmarkName = "-getDataBaseLocation"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FireBaseDemo/ChatViewController.m"
-            timestampString = "514707321.404476"
+            timestampString = "514756195.006264"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "162"
             endingLineNumber = "162"
-            landmarkName = "-getDataBaseLocation"
+            landmarkName = "-didPressSendButton:withMessageText:senderId:senderDisplayName:date:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -1730,11 +1714,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FireBaseDemo/ChatViewController.m"
-            timestampString = "514707321.404476"
+            timestampString = "514756195.006264"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "134"
-            endingLineNumber = "134"
+            startingLineNumber = "163"
+            endingLineNumber = "163"
+            landmarkName = "-didPressSendButton:withMessageText:senderId:senderDisplayName:date:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FireBaseDemo/ChatViewController.m"
+            timestampString = "514756195.006264"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "135"
+            endingLineNumber = "135"
             landmarkName = "-loadAvatars"
             landmarkType = "7">
          </BreakpointContent>
@@ -1746,11 +1746,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FireBaseDemo/ChatViewController.m"
-            timestampString = "514707535.148295"
+            timestampString = "514756195.006264"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "309"
-            endingLineNumber = "309"
+            startingLineNumber = "310"
+            endingLineNumber = "310"
             landmarkName = "-collectionView:avatarImageDataForItemAtIndexPath:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1813,22 +1813,6 @@
             timestampString = "514707321.404476"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
-            landmarkName = "-observeTyping"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FireBaseDemo/ChatViewController.m"
-            timestampString = "514707321.404476"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
             startingLineNumber = "64"
             endingLineNumber = "64"
             landmarkName = "-textViewDidChange:"
@@ -1842,11 +1826,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FireBaseDemo/ChatViewController.m"
-            timestampString = "514707535.148295"
+            timestampString = "514756195.006264"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "230"
-            endingLineNumber = "230"
+            startingLineNumber = "231"
+            endingLineNumber = "231"
             landmarkName = "-imagePickerController:didFinishPickingMediaWithInfo:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1858,11 +1842,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FireBaseDemo/ChatViewController.m"
-            timestampString = "514707535.148295"
+            timestampString = "514756195.006264"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "232"
-            endingLineNumber = "232"
+            startingLineNumber = "233"
+            endingLineNumber = "233"
             landmarkName = "-imagePickerController:didFinishPickingMediaWithInfo:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1874,11 +1858,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FireBaseDemo/ChatViewController.m"
-            timestampString = "514707535.148295"
+            timestampString = "514756195.006264"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "237"
-            endingLineNumber = "237"
+            startingLineNumber = "238"
+            endingLineNumber = "238"
             landmarkName = "-imagePickerController:didFinishPickingMediaWithInfo:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1890,11 +1874,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FireBaseDemo/ChatViewController.m"
-            timestampString = "514707535.148295"
+            timestampString = "514756195.006264"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "242"
-            endingLineNumber = "242"
+            startingLineNumber = "243"
+            endingLineNumber = "243"
             landmarkName = "-imagePickerController:didFinishPickingMediaWithInfo:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1906,11 +1890,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FireBaseDemo/ChatViewController.m"
-            timestampString = "514707535.148295"
+            timestampString = "514756195.006264"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "234"
-            endingLineNumber = "234"
+            startingLineNumber = "235"
+            endingLineNumber = "235"
             landmarkName = "-imagePickerController:didFinishPickingMediaWithInfo:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1922,11 +1906,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FireBaseDemo/ChatViewController.m"
-            timestampString = "514707535.148295"
+            timestampString = "514756195.006264"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "239"
-            endingLineNumber = "239"
+            startingLineNumber = "240"
+            endingLineNumber = "240"
             landmarkName = "-imagePickerController:didFinishPickingMediaWithInfo:"
             landmarkType = "7">
          </BreakpointContent>
@@ -1938,11 +1922,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FireBaseDemo/ChatViewController.m"
-            timestampString = "514707321.404476"
+            timestampString = "514756195.006264"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "112"
-            endingLineNumber = "112"
+            startingLineNumber = "113"
+            endingLineNumber = "113"
             landmarkName = "-observeIncomingMessages"
             landmarkType = "7">
          </BreakpointContent>
@@ -1954,12 +1938,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "FireBaseDemo/ChatViewController.m"
-            timestampString = "514707321.404476"
+            timestampString = "514756195.006264"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "123"
-            endingLineNumber = "123"
+            startingLineNumber = "124"
+            endingLineNumber = "124"
             landmarkName = "-observeIncomingMessages"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FireBaseDemo/ChatViewController.m"
+            timestampString = "514755675.256518"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "-observeTyping"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -62,7 +62,6 @@
     [isTypingRef setValue:@YES];
     self.indicatorRemover=[NSTimer scheduledTimerWithTimeInterval:TYPING_INDICATOR_TIMEOUT repeats:NO block:^(NSTimer * _Nonnull timer) {
         [isTypingRef removeValue];
-        NSLog(@"Removing typing indicatior");
     }];
 }
 
@@ -71,13 +70,13 @@
     [isTypingRef onDisconnectRemoveValue];
     FIRDatabaseReference *typingMonitor=[[[[[FireBaseManager sharedFireBaseManager].databaseRef root]child:@"messages"]child:@"typeIndicator"]child:self.recipient[@"uid"]];
     [typingMonitor observeEventType:FIRDataEventTypeValue withBlock:^(FIRDataSnapshot * _Nonnull snapshot) {
-        NSLog(@"%@",snapshot.value);
         if([snapshot.value isEqual:@YES]){
             self.showTypingIndicator=YES;
             [self scrollToBottomAnimated:YES];
         }
         else
             self.showTypingIndicator=NO;
+        [self scrollToBottomAnimated:YES];
             }];
 }
 -(void)addMessageWithID: (NSString *)senderId andName:(NSString *)name andText:(NSString *)text{
@@ -185,7 +184,6 @@
         if(error == nil){
         [photoRef metadataWithCompletion:^(FIRStorageMetadata * _Nullable metadata, NSError * _Nullable error) {
             if(error==nil){
-                NSLog(@"%@",metadata);
                 mediaItem.image=[UIImage imageWithData:data];
                 [self.collectionView reloadData];
                 if(key!=nil)

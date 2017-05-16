@@ -8,7 +8,7 @@
 
 #import <JSQMessagesViewController/JSQMessagesViewController.h>
 #import <JSQMessagesViewController/JSQMessagesBubbleImageFactory.h>
-#define TYPING_INDICATOR_TIMEOUT 1
+#define TYPING_INDICATOR_TIMEOUT 2
 #define IMAGE_URL_NOT_SET_KEY @"NOTSET"
 @interface ChatViewController : JSQMessagesViewController<UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 @property(nonatomic,strong) NSDictionary *recipient;
