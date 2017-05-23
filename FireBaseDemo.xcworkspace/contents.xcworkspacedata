@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Workspace
    version = "1.0">
+   <Group
+      location = "group:"
+      name = "ShowcaseImage">
+      <FileRef
+         location = "group:/Users/nathanchen/code/ObjectiveC/FireBaseDemo/loginScreen.png">
+      </FileRef>
+      <FileRef
+         location = "group:/Users/nathanchen/code/ObjectiveC/FireBaseDemo/friendList.png">
+      </FileRef>
+      <FileRef
+         location = "group:/Users/nathanchen/code/ObjectiveC/FireBaseDemo/chatScreen.png">
+      </FileRef>
+      <FileRef
+         location = "group:/Users/nathanchen/code/ObjectiveC/FireBaseDemo/mainScreen.png">
+      </FileRef>
+      <FileRef
+         location = "group:/Users/nathanchen/code/ObjectiveC/FireBaseDemo/postScreen.png">
+      </FileRef>
+   </Group>
    <FileRef
       location = "group:FireBaseDemo.xcodeproj">
    </FileRef>
